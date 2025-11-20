@@ -1,6 +1,10 @@
+import { Button } from "./components/Button"
+
 function App() {
   return (
-    <>app</>
+    <div className="font-bold text-2xl">
+      <Button>Click</Button>
+    </div>
   )
 }
 
