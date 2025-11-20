@@ -1,6 +1,9 @@
 {
-  "name": "@antonioz/react-component-lib",
-  "private": true,
+  "name": "@antonioz/anton-ui",
+  "private": false,
+  "publishConfig": {
+    "access": "restricted"
+  },
   "version": "0.0.1",
   "type": "module",
   "types": "dist/anton-ui.d.ts",
