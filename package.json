@@ -1,8 +1,7 @@
 {
   "name": "@antonioz/anton-ui",
-  "private": false,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "version": "0.0.1",
   "type": "module",
