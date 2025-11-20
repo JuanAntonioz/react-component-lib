@@ -7,6 +7,9 @@
     "module": "ESNext",
     "types": ["vite/client"],
     "skipLibCheck": true,
+    "paths": {
+      "@/*": ["./lib/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -24,5 +27,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": ["lib"],
+  "exclude": [
+    "lib/**/*.test.ts",
+    "lib/**/*.test.tsx",
+    "lib/**/*.spec.ts",
+    "lib/**/*.spec.tsx"
+  ]
 }
