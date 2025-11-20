@@ -1,8 +1,19 @@
 {
   "name": "@antonioz/react-component-lib",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "types": "dist/anton-ui.d.ts",
+  "main": "dist/anton-ui.umd.cjs",
+  "module": "dist/anton-ui.js",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/anton-ui.js",
+      "require": "./dist/anton-ui.umd.cjs"
+    },
+    "./style.css": "./dist/anton-ui.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

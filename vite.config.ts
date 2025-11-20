@@ -11,7 +11,10 @@ export default defineConfig({
   plugins: [
     react(), 
     tailwindcss(),
-    dts()
+    dts({ 
+      rollupTypes: true,
+      tsconfigPath: resolve(__dirname, 'tsconfig.app.json'),
+    })
   ],
   resolve: {
     alias: {
